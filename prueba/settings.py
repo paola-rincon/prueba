@@ -26,7 +26,7 @@ SECRET_KEY = '5o0t#$sz*=^=gr9js6y(@$i6-qr6v^vemgop8h9&8!h0bcx=7s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -87,10 +87,11 @@ WSGI_APPLICATION = 'prueba.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER':'paola',
-        'PASSWORD':'admin123',
-        'HOST':''
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'paola12345678',
+        'HOST':'database-1.cxiev7a1gkoj.us-east-1.rds.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
