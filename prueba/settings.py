@@ -92,10 +92,10 @@ dc = {
 }
 
 # Conexión a la base de datos
-conexion = psycopg2.connect(**dc)
+# conexion = psycopg2.connect(**dc)
 
 # Cerrar la conexión
-conexion.close()
+# conexion.close()
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
